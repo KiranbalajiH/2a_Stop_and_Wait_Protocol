@@ -15,7 +15,7 @@ To write a python program to perform stop and wait protocol
 ## PROGRAM
 
 CLIENT :  
-
+```py
 import socket
 s=socket.socket()
 s.bind(('localhost',8000))
@@ -31,16 +31,16 @@ while True:
  else:
  c.close()
  break
-
+```
 SERVER :
-
+```py
 import socket
 s=socket.socket()
 s.connect(('localhost',8000))
 while True:
  print(s.recv(1024).decode())
  s.send("Acknowledgement Recived".encode())
- 
+ ```
 ## OUTPUT
 ![Screenshot 2024-09-02 140920](https://github.com/user-attachments/assets/8dfdd8ec-5605-4b99-8f93-3544169bbd7c)
 
