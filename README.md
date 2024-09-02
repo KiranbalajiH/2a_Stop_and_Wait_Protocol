@@ -32,6 +32,8 @@ while True:
  c.close()
  break
 ```
+
+
 SERVER :
 ```py
 import socket
@@ -41,7 +43,10 @@ while True:
  print(s.recv(1024).decode())
  s.send("Acknowledgement Recived".encode())
  ```
+
+
 ## OUTPUT
+
 ![Screenshot 2024-09-02 140920](https://github.com/user-attachments/assets/8dfdd8ec-5605-4b99-8f93-3544169bbd7c)
 
 ## RESULT
